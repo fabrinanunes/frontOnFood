@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Style from "./header.module.css";
+import { IconBookmark, IconHome } from "@/icons";
 
 export function Header(){
    return (
@@ -22,12 +23,18 @@ export function Header(){
             <ul className="flex">
                <li>
                   <Link href="/">
-                     <a>Home</a>
+                     <a>
+                        <IconHome />
+                        Home
+                     </a>
                   </Link>
                </li>
                <li>
                   <Link href='/favorites'>
-                  <a>Favorites</a>
+                  <a>
+                     <IconBookmark />
+                     Favorites
+                  </a>
                   </Link>
                </li>
             </ul>

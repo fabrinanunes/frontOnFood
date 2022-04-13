@@ -1,0 +1,13 @@
+.footer {
+   @apply text-[#909090] text-lg font-semibold text-center;
+   @apply px-12 py-12 mx-auto max-w-7xl;
+}
+
+.footer a svg{
+   @apply w-7 h-7 mr-1.5 p-0 fill-[#a3a3a4];
+   @apply inline;
+}
+
+.footer a:hover svg{
+   @apply fill-[#503e9d]
+}

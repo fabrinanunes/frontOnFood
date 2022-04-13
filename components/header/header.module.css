@@ -9,13 +9,21 @@
 
 .nav ul a {
    @apply flex items-center px-6 min-h-[56px];
-   @apply font-bold text-base;
+   @apply font-bold text-base text-[#626264];
    @apply border-[#d9d9d9] border-2 rounded-full transition-colors;
    @apply hover:bg-[#503e9d] hover:text-white hover:border-[#503e9d]
+}
+
+.nav a svg{
+   @apply w-6 h-6 mr-2 fill-[#a3a3a4];
+}
+
+.nav a:hover svg{
+   @apply fill-white
 }
 
 .brand a{
    @apply flex items-center gap-2 text-black;
    @apply text-xl md:text-2xl font-bold;
-   @apply transition-opacity hover:opacity-90;
+   @apply transition-transform hover:scale-110;
 }
