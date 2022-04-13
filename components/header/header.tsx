@@ -1,7 +1,37 @@
+import Link from "next/link";
+import Image from "next/image";
+
+import Style from "./header.module.css";
+
 export function Header(){
    return (
       <header>
-         <h1>Front on Food</h1>
+         <nav className={Style.nav}>
+            <div className={Style.brand}>
+               <Link href="/">
+                  <a>
+                     <Image 
+                        src="/assets/icons/logo.svg" 
+                        alt="frontOnFoodLogo" 
+                        width={45} 
+                        height={36} />
+                     OnFood
+                  </a>
+               </Link>
+            </div>
+            <ul className="flex">
+               <li>
+                  <Link href="/">
+                     <a>Home</a>
+                  </Link>
+               </li>
+               <li>
+                  <Link href='/favorites'>
+                  <a>Favorites</a>
+                  </Link>
+               </li>
+            </ul>
+         </nav>
       </header>
    )
 };
